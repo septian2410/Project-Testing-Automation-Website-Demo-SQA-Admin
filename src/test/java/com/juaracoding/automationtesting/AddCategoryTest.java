@@ -231,6 +231,3 @@ public class AddCategoryTest {
     }
 }
 
-// Total 8 Unit Test
-// 6 Test Positive (LoginTest, AddCategory (Save Button), AddCategory (AddAnother Button), AddCategory (ContinueEditing Button) )
-// 2 Test Negative (Input Login Incorrect, Input Null Category)
