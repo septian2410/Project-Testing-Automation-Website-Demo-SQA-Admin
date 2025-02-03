@@ -172,7 +172,7 @@ public class AddCategoryTest {
         dashboardLogOutPage.LoginBack();
     }
 
-    //    Test Negative -- (Save And Continue, Null)
+    //    Test Negative -- (Save And Continue,  Null)
     @Test(priority = 10)
     public void AddCategoryTest6() throws InterruptedException {
     driver.get("http://127.0.0.1:8000/admin");
@@ -201,6 +201,3 @@ public class AddCategoryTest {
 
 }
 
-// Total 8 Unit Test
-// 6 Test Positive (LoginTest, AddCategory (Save Button), AddCategory (AddAnother Button), AddCategory (ContinueEditing Button) )
-// 2 Test Negative (Input Login Incorrect, Input Null Category)
