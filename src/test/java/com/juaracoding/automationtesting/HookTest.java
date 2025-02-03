@@ -10,8 +10,9 @@ public class HookTest {
     @BeforeTest
     public void init() {
         System.out.println("init");
-        DriverSingleton.getDriver(BrowserType.CHROME);
+        DriverSingleton.getDriver(BrowserType.CHROME); // browser testing
     }
+
 
     @AfterTest
     public void teardown() {

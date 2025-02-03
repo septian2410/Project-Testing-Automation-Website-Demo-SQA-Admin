@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DashboardPage {
 
-    private WebDriver driver;
+    private WebDriverWait wait;
 
     @FindBy(xpath = "//h1[normalize-space()='Welcome to Demo SQA Testing Portal']")
     private WebElement welcomeHeadingElement;
@@ -24,15 +24,12 @@ public class DashboardPage {
     @FindBy(xpath = "//a[@href='/admin/products/category/add/']")
     private WebElement buttonAddCategory;
 
-
-    private WebDriverWait wait;
-
     public DashboardPage(WebDriver driver) {
-        this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         PageFactory.initElements(driver, this);
     }
+
 
     public void waitForWelcomeHeadingElement() {
         By locator = By.xpath("//h1[normalize-space()='Welcome to Demo SQA Testing Portal']");
@@ -44,13 +41,15 @@ public class DashboardPage {
         return welcomeHeadingElement.getText(); // Kembalikan teks DashboardPage
     }
 
-    public void clickAddCategoryButton() {
-        buttonAddCategory.click();
-    }
 
-    public void clickLogOutButton() {
-        buttonLogoutElement.click();
-    }
+        public void clickAddCategoryButton() {
+            buttonAddCategory.click();
+        }
+
+        public void clickLogOutButton() {
+            buttonLogoutElement.click();
+        }
+
 
     public void AddCategoryActivity( ) {
         clickAddCategoryButton();

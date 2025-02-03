@@ -13,10 +13,10 @@ import java.util.concurrent.TimeUnit;
 
 public class SignInPage {
 
-    private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(id = "id_username")
+    // Elemen Web yang Diidentifikasi
+    @FindBy(id = "id_username"      )
     WebElement usernameElement;
 
     @FindBy(id = "id_password")
@@ -29,33 +29,32 @@ public class SignInPage {
     WebElement errornote;
 
     public SignInPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Inisialisasi WebDriverWait
+        PageFactory.initElements(driver, this);                  // Inisialisasi Elemen Web yang Diidentifikasi
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); //  Mengatur waktu tunggu
     }
 
-    public void fillUsername(String username) {
-        usernameElement.sendKeys(username);
-    }
 
-    public void fillPassword(String password) {
-        passwordElement.sendKeys(password);
-    }
+        public void fillUsername(String username) {
+            usernameElement.sendKeys(username);
+        }
 
-    public void clickLoginButton() {
-        buttonSignInElement.click();
-    }
+        public void fillPassword(String password) {
+            passwordElement.sendKeys(password);
+        }
+
+        public void clickLoginButton() {
+            buttonSignInElement.click();
+        }
 
 
     public void loginActivity(String username, String password) throws InterruptedException{
+        TimeUnit.SECONDS.sleep(2);   // Menunggu 2 detik
+            fillUsername(username);
         TimeUnit.SECONDS.sleep(2);
-        fillUsername(username);
+            fillPassword(password);
         TimeUnit.SECONDS.sleep(2);
-        fillPassword(password);
-        TimeUnit.SECONDS.sleep(2);
-        clickLoginButton();
+            clickLoginButton();
     }
-
 
     public void waitForErrorNoteElement() {
         By locator = By.xpath("//p[@class='errornote']");
