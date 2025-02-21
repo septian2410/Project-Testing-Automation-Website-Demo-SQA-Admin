@@ -1,4 +1,4 @@
-package com.juaracoding.automationtesting;
+package com.juaracoding.automationtesting.test;
 
 import com.juaracoding.automationtesting.drivers.DriverSingleton;
 import com.juaracoding.automationtesting.pages.authentications.DashboardLogOutPage;
@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SignInTestAdmin {
+public class SignInTest {
 
     private SignInPage signInPage;
     private DashboardPage dashboardPage;
@@ -33,8 +33,8 @@ public class SignInTestAdmin {
 
 //    Test Positive ++ (Button Login)
     @Test(priority = -1)
-    public void signInTest() throws InterruptedException {
-        driver.get("http://127.0.0.1:8000/admin");
+    public void signInTest_Success() throws InterruptedException {
+    driver.get("http://127.0.0.1:8000/admin");
         signInPage.loginActivity("pandu", "qwerty123") ;
 
         String expected = "Welcome to Demo SQA Testing Portal";
@@ -47,8 +47,8 @@ public class SignInTestAdmin {
 
 //    Test Negative -- (Button Login, Not Correct)
     @Test
-    public void signInTest2() throws InterruptedException {
-        driver.get("http://127.0.0.1:8000/admin");
+    public void signInTest_Invalid() throws InterruptedException {
+    driver.get("http://127.0.0.1:8000/admin");
         signInPage.loginActivity("admin", "admin");
 
         String expected = "Please enter the correct username and password for a staff account. Note that both fields may be case-sensitive.";

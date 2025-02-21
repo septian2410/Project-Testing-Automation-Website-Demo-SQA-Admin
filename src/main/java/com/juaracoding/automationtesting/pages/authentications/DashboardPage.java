@@ -26,30 +26,15 @@ public class DashboardPage {
 
     public DashboardPage(WebDriver driver) {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         PageFactory.initElements(driver, this);
     }
-
-
-    public void waitForWelcomeHeadingElement() {
-        By locator = By.xpath("//h1[normalize-space()='Welcome to Demo SQA Testing Portal']");
-        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-    }
-
-    public String getTextWelocmeHeadingElement() {
-        waitForWelcomeHeadingElement();
-        return welcomeHeadingElement.getText(); // Kembalikan teks DashboardPage
-    }
-
 
         public void clickAddCategoryButton() {
             buttonAddCategory.click();
         }
-
         public void clickLogOutButton() {
             buttonLogoutElement.click();
         }
-
 
     public void AddCategoryActivity( ) {
         clickAddCategoryButton();
@@ -60,5 +45,28 @@ public class DashboardPage {
         clickLogOutButton();
     }
 
+        public void waitForWelcomeHeadingElement() {
+            By locator = By.xpath("//h1[normalize-space()='Welcome to Demo SQA Testing Portal']");
+            wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        }
+        public String getTextWelocmeHeadingElement() {
+            waitForWelcomeHeadingElement();
+            return welcomeHeadingElement.getText(); // Kembalikan teks DashboardPage
+        }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         driver.findElement(By.xpath("//h1[normalize-space()='Welcome to Demo SQA Testing Portal']"));

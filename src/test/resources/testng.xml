@@ -4,9 +4,9 @@
 
     <test name="Test Actions">
         <classes>
-            <class name="com.juaracoding.automationtesting.HookTest" />
-            <class name="com.juaracoding.automationtesting.SignInTestAdmin" />
-            <class name="com.juaracoding.automationtesting.AddCategoryTest" />
+            <class name="com.juaracoding.automationtesting.hooks.HookTest" />
+            <class name="com.juaracoding.automationtesting.test.SignInTest" />
+            <class name="com.juaracoding.automationtesting.test.CategoryTest" />
         </classes>
     </test>
 

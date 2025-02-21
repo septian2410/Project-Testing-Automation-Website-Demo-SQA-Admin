@@ -25,25 +25,24 @@ public class DashboardCategory {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public String getUrlDashboardCategory() {
-        System.out.println(driver.getCurrentUrl());
-        return driver.getCurrentUrl();
-    }
-
-    public void waitForCategorySuccessElement() {
-        By locator = By.xpath("//li[@class='success']");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)); // Tunggu elemen terlihat
-    }
-
-    public String getTextCategorySuccess() {
-        waitForCategorySuccessElement();
-        try {
-            Thread.sleep(2000); // Berhenti selama 2 detik
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        public String getUrlDashboardCategory() {
+            System.out.println(driver.getCurrentUrl());
+            return driver.getCurrentUrl();
         }
-        return categoryElementSuccess.getText(); // Kembalikan teks category success (Save Category)
-    }
+
+        public void waitForCategorySuccessElement() {
+            By locator = By.xpath("//li[@class='success']");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(locator)); // Tunggu elemen terlihat
+        }
+        public String getTextCategorySuccess() {
+            waitForCategorySuccessElement();
+            try {
+                Thread.sleep(2000); // Berhenti selama 2 detik
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return categoryElementSuccess.getText(); // Kembalikan teks category success (Save Category)
+        }
 
 }
 

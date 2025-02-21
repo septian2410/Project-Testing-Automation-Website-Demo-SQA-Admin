@@ -41,77 +41,72 @@ public class DashboardAddCategory {
         PageFactory.initElements(driver, this);
     }
 
-    public String getUrlDashboardAddCategory() {
-        System.out.println(driver.getCurrentUrl());
-       return driver.getCurrentUrl();
-    }
 
-    public void fillCategory(String category) {
-        categoryElement.sendKeys(category);
-    }
-
-    public void clickSaveButton() {
-        buttonSave.click();
-    }
-
-    public void clickAddAnotherButton() {
-        buttonAddAnother.click();
-    }
-
-    public void clickContinueEditButton() {
-        buttonContinueEdit.click();
-    }
-
+        public void fillCategory(String category) {
+            categoryElement.sendKeys(category);
+        }
+        public void clickSaveButton() {
+            buttonSave.click();
+        }
+        public void clickAddAnotherButton() {
+            buttonAddAnother.click();
+        }
+        public void clickContinueEditButton() {
+            buttonContinueEdit.click();
+        }
 
     public void saveCategory(String category) throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
-        fillCategory(category);
+            fillCategory(category);
         TimeUnit.SECONDS.sleep(2);
-        clickSaveButton();
+            clickSaveButton();
     }
 
     public void AddAnotherCategory(String category) throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
-        fillCategory(category);
+            fillCategory(category);
         TimeUnit.SECONDS.sleep(2);
-        clickAddAnotherButton();
+            clickAddAnotherButton();
     }
 
     public void ContinueEditingCategory(String category) throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
-        fillCategory(category);
+            fillCategory(category);
         TimeUnit.SECONDS.sleep(2);
-        clickContinueEditButton();
+            clickContinueEditButton();
     }
 
-    public void waitForErrorInputCategoryElement() {
-        By locator = By.xpath("//p[@class='errornote']");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)); // Tunggu elemen terlihat
+        public String getUrlDashboardAddCategory() {
+        System.out.println(driver.getCurrentUrl());
+        return driver.getCurrentUrl();
     }
 
-    public String getTextErrorInputCategoryElement() {
-        waitForErrorInputCategoryElement(); // Tunggu elemen sebelum mengakses teksnya
-        try {
-            Thread.sleep(2000); // Berhenti selama 2 detik
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        public void waitForErrorInputCategoryElement() {
+            By locator = By.xpath("//p[@class='errornote']");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(locator)); // Tunggu elemen terlihat
         }
-        return categoryErrorElement.getText(); // Kembalikan teks error (Input Null)
-    }
-
-    public void waitForCategorySuccesAddElement() {
-        By locator = By.xpath("//li[@class='success']");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)); // Tunggu elemen terlihat
-    }
-
-    public String getTextCategorySuccessAdd() {
-        waitForCategorySuccesAddElement(); // Tunggu elemen sebelum mengakses teksnya
-        try {
-            Thread.sleep(2000); // Berhenti selama 2 detik
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        public String getTextErrorInputCategoryElement() {
+            waitForErrorInputCategoryElement(); // Tunggu elemen sebelum mengakses teksnya
+            try {
+                Thread.sleep(2000); // Berhenti selama 2 detik
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return categoryErrorElement.getText(); // Kembalikan teks error (Input Null)
         }
-        return categorySuccessAddElement.getText(); // Kembalikan teks category success (Add category)
-    }
+
+        public void waitForCategorySuccesAddElement() {
+            By locator = By.xpath("//li[@class='success']");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        }
+        public String getTextCategorySuccessAdd() {
+            waitForCategorySuccesAddElement();
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return categorySuccessAddElement.getText(); // Kembalikan teks category success (Add category)
+        }
 
 }

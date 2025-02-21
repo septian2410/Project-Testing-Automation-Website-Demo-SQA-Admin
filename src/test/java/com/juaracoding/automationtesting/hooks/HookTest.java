@@ -1,4 +1,4 @@
-package com.juaracoding.automationtesting;
+package com.juaracoding.automationtesting.hooks;
 
 import com.juaracoding.automationtesting.drivers.DriverSingleton;
 import com.juaracoding.automationtesting.drivers.utils.BrowserType;

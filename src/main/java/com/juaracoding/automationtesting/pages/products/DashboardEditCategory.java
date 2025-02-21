@@ -34,20 +34,19 @@ public class DashboardEditCategory {
         return driver.getCurrentUrl();
     }
 
-    public void clickSaveButton() {
-        buttonSave.click();
+        public void clickSaveButton() {
+            buttonSave.click();
     }
 
     public void saveCategory() throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
-        clickSaveButton();
+            clickSaveButton();
     }
 
     public void waitForCategorySuccessEditElement() {
         By locator = By.xpath("//li[@class='success']");
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator)); // Tunggu elemen terlihat
     }
-
     public String getTextCategorySuccessContinue() {
         waitForCategorySuccessEditElement();
         try {

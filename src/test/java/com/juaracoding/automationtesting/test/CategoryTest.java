@@ -1,4 +1,4 @@
-package com.juaracoding.automationtesting;
+package com.juaracoding.automationtesting.test;
 
 import com.juaracoding.automationtesting.drivers.DriverSingleton;
 import com.juaracoding.automationtesting.pages.products.DashboardAddCategory;
@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class AddCategoryTest {
+public class CategoryTest {
 
     private WebDriver driver;
     private SignInPage signInPage;
@@ -41,8 +41,8 @@ public class AddCategoryTest {
 
 
     //    Test Positive ++ (Save Button)
-    @Test(priority = -1, enabled = false)
-    public void AddCategoryTest1() throws InterruptedException {
+    @Test(priority = -1)
+    public void testSaveCategory_Success() throws InterruptedException {
     driver.get("http://127.0.0.1:8000/admin");
         signInPage.loginActivity("pandu", "qwerty123");
         dashboardPage.AddCategoryActivity();
@@ -69,7 +69,7 @@ public class AddCategoryTest {
 
     //    Test Negative -- (Save Button, Null)
     @Test()
-    public void AddCategoryTest2() throws InterruptedException {
+    public void testSaveCategory_NullInput() throws InterruptedException {
     driver.get("http://127.0.0.1:8000/admin");
         signInPage.loginActivity("pandu", "qwerty123");
         dashboardPage.AddCategoryActivity();
@@ -96,7 +96,7 @@ public class AddCategoryTest {
 
     //    Test Positive ++ (Save And Add Another)
     @Test()
-    public void AddCategoryTest3() throws InterruptedException {
+    public void testSaveAndAddAnotherCategory_Success() throws InterruptedException {
     driver.get("http://127.0.0.1:8000/admin");
         signInPage = new SignInPage(driver);
         signInPage.loginActivity("pandu", "qwerty123");
@@ -119,7 +119,7 @@ public class AddCategoryTest {
 
     //    Test Negative -- (Save And Add Another, Null)
     @Test()
-    public void AddCategoryTest4() throws InterruptedException {
+    public void testSaveAndAddAnotherCategory_NullInput() throws InterruptedException {
     driver.get("http://127.0.0.1:8000/admin");
         signInPage.loginActivity("pandu", "qwerty123");
         dashboardPage.AddCategoryActivity();
@@ -146,7 +146,7 @@ public class AddCategoryTest {
 
     //    Test Positive ++ (Save And Continue Editing)
     @Test()
-    public void AddCategoryTest5() throws InterruptedException {
+    public void testSaveAndContinueEditingCategory_Success() throws InterruptedException {
     driver.get("http://127.0.0.1:8000/admin");
         signInPage.loginActivity("pandu", "qwerty123");
         dashboardPage.AddCategoryActivity();
@@ -174,7 +174,7 @@ public class AddCategoryTest {
 
     //    Test Negative -- (Save And Continue,  Null)
     @Test(priority = 10)
-    public void AddCategoryTest6() throws InterruptedException {
+    public void testSaveAndContinueEditingCategory_NullInput() throws InterruptedException {
     driver.get("http://127.0.0.1:8000/admin");
         signInPage.loginActivity("pandu", "qwerty123");
         dashboardPage.AddCategoryActivity();
