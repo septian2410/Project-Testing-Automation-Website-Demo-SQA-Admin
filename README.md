@@ -1,6 +1,7 @@
-# Mobile Testing Google Calculator with Appium 
+# Project Testing Automation Website Demo SQA Admin
 ------------------------
-Menguji otomatisasi Google Calculator menggunakan Appium. Pengujian mencakup validasi berbagai operasi aritmatika dasar (penjumlahan, pengurangan, perkalian, pembagian).
+Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, TestNG, dan Cucumber serta menggunakan Design Patern (Page Object Model). 
+Pengujian mencakup validasi login, logout, serta manajemen kategori produk dengan berbagai skenario positif dan negatif.
 
 ## TechnicalStack 
 ------------------------
