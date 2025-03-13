@@ -2,7 +2,7 @@
 ------------------------
 Menguji otomatisasi Google Calculator menggunakan Appium. Pengujian mencakup validasi berbagai operasi aritmatika dasar (penjumlahan, pengurangan, perkalian, pembagian).
 
-## Tools
+## TechnicalStack 
 ------------------------
 ![TOOLS](https://github.com/user-attachments/assets/2fa1bf43-c834-490d-b872-efb09dac64d8)
 
