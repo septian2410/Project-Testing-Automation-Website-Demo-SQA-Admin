@@ -20,6 +20,10 @@ Pengujian mencakup validasi login, logout, serta manajemen kategori produk denga
 ![Rep1](https://github.com/user-attachments/assets/943b95dc-61ee-453b-82e6-b9ab30c58566)
 
 
+## Video Demo Automation
+------------------------
+https://www.youtube.com/watch?v=rGr5A0z54t8
+
 
 ## License
 Jakarta 
