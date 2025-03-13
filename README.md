@@ -5,7 +5,7 @@ Pengujian mencakup validasi login, logout, serta manajemen kategori produk denga
 
 ## TechnicalStack 
 ------------------------
-![TOOLS](https://github.com/user-attachments/assets/2fa1bf43-c834-490d-b872-efb09dac64d8)
+![TOOLS](https://github.com/user-attachments/assets/111446b4-9873-4caf-a15d-92f410dc5aac)
 
 
 ## ShowCase Application
@@ -18,6 +18,7 @@ Pengujian mencakup validasi login, logout, serta manajemen kategori produk denga
 ## Report SureFire
 --------------------------
 ![Rep1](https://github.com/user-attachments/assets/943b95dc-61ee-453b-82e6-b9ab30c58566)
+
 
 ## Link Youtube (Automation Testing Running);
 ------------------------------------------------
