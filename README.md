@@ -7,6 +7,9 @@ Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, Serta menggunak
 ------------------------
 ![TOOLS](https://github.com/user-attachments/assets/111446b4-9873-4caf-a15d-92f410dc5aac)
 
+## Video Demo Automation
+------------------------
+https://www.youtube.com/watch?v=rGr5A0z54t8
 
 ## ShowCase Application
 -------------------------
@@ -18,11 +21,6 @@ Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, Serta menggunak
 ## Report SureFire
 --------------------------
 ![Rep1](https://github.com/user-attachments/assets/943b95dc-61ee-453b-82e6-b9ab30c58566)
-
-
-## Video Demo Automation
-------------------------
-https://www.youtube.com/watch?v=rGr5A0z54t8
 
 
 ## License
