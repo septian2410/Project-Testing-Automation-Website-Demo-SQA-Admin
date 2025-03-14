@@ -24,7 +24,4 @@ https://www.youtube.com/watch?v=rGr5A0z54t8
 
 
 ## License
-Jakarta 
-Pandu Septiandito
-Since 2025
-
+Pandu Septiandito, Jakarta, Since 2025
