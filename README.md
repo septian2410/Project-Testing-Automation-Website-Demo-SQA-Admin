@@ -1,7 +1,7 @@
 # Project Testing Automation Website Demo SQA Admin
 ------------------------
-Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, Serta menggunakan Design Patern (Page Object Model). Pengujian mencakup fitur Authentication 
-(login, logout) serta manajemen kategori produk dengan berbagai skenario positif dan negatif.
+Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, Serta menggunakan Design Patern (Page Object Model). Pengujian semua mencakup fitur Authentication 
+(login, logout) serta Products (Category & Product).
 
 ## TechnicalStack 
 ------------------------
@@ -18,9 +18,14 @@ https://www.youtube.com/watch?v=rGr5A0z54t8
 ![1](https://github.com/user-attachments/assets/9a904fa5-f3bf-4849-b5b1-685fe7ce5209)
 
 
-## Report SureFire
+TEST RESULT & EXTENT REPORT
 --------------------------
-![Rep1](https://github.com/user-attachments/assets/943b95dc-61ee-453b-82e6-b9ab30c58566)
+![Extend Report](https://github.com/user-attachments/assets/458ab12b-fdd2-46a5-8755-1e1d06d5278c)
+
+
+TEST RESULT & CUCUMBER REPORT
+--------------------------
+![Report Cucumber](https://github.com/user-attachments/assets/69d071ab-8ab9-4b8d-aec5-bdc9c5c87f59)
 
 
 ## License
