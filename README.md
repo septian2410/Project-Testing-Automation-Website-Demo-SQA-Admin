@@ -1,7 +1,6 @@
 # Project Testing Automation Website Demo SQA Admin
 ------------------------
-Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, Serta menggunakan Design Patern (Page Object Model). Pengujian semua mencakup fitur Authorization 
-(login & logout) serta Products (Category & Product).
+Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, Serta menggunakan Design Patern (Page Object Model). Pengujian mencakup semua fitur yang dimiliki oleh Menu Authorization (login & logout) serta Menu Products (Category & Product) dengan berbagai skenario positif dan negatif.
 
 ## TechnicalStack 
 ------------------------
