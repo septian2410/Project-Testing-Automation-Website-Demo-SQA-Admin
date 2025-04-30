@@ -9,7 +9,7 @@ Menguji otomatisasi website Demo SQA Admin menggunakan Selenium, Serta menggunak
 
 ## Video Demo Automation
 ------------------------
-https://www.youtube.com/watch?v=rGr5A0z54t8
+https://drive.google.com/file/d/1FrcK3dM7GQ3mMsfc1fV32Pi8_1HdUdcF/view?usp=sharing
 
 ## ShowCase Application
 -------------------------
