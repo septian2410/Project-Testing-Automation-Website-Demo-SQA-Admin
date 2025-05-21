@@ -20,7 +20,7 @@ A comprehensive test automation solution for SQA Admin portals using Selenium an
 ## Technical Stack
 ![Test Automation Tools](https://github.com/user-attachments/assets/111446b4-9873-4caf-a15d-92f410dc5aac)
 
-## Video Demonstrations
+## 🎥 Video Demonstrations
 ### Selenium Implementation
 [![Selenium Demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://drive.google.com/file/d/1FrcK3dM7GQ3mMsfc1fV32Pi8_1HdUdcF/view)
 
