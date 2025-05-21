@@ -32,7 +32,7 @@ A comprehensive test automation solution for SQA Admin portals using Selenium an
 |------------------|------------|--------------|
 | Authorization    | 15+        | 100%         |
 | Product Category | 20+        | 95%          |
-| Product Management | 25+      | 90%          |
+| Product Management | 25+      | 95%          |
 
 ## Test Results
 ### Extent Reports Dashboard
@@ -46,9 +46,9 @@ A comprehensive test automation solution for SQA Admin portals using Selenium an
 ![Admin Portal](https://github.com/user-attachments/assets/37849ad7-3e66-4aae-8096-c450c4228bf1)
 
 ### Data Management Modules
-| User Management | Product Management | Category Management |
-|-----------------|--------------------|---------------------|
-| ![Users](https://github.com/user-attachments/assets/7eacebc5-4074-4b5f-ae5c-a43185d4067f) | ![Products](https://github.com/user-attachments/assets/2576e24c-c493-450a-a0c4-c3e3e318bdae) | ![Categories](https://github.com/user-attachments/assets/88cb2e99-8ad2-494a-977b-a9551a99f351) |
+| User Management | Product Management | Category Management | Group Management |
+|-----------------|--------------------|---------------------|------------------|
+| ![Users](https://github.com/user-attachments/assets/7eacebc5-4074-4b5f-ae5c-a43185d4067f) | ![Products](https://github.com/user-attachments/assets/2576e24c-c493-450a-a0c4-c3e3e318bdae) | ![Categories](https://github.com/user-attachments/assets/88cb2e99-8ad2-494a-977b-a9551a99f351) | ![Dashboard Groups](https://github.com/user-attachments/assets/540219a5-f5d3-46f2-9313-b42c68aed3b6) |
 
 ## License
 Developed by Pandu Septiandito © 2025
